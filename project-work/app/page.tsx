@@ -3,6 +3,7 @@ import { ContactForm } from "@/components/ContactForm";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { SlidingQuotes } from "@/components/SlidingQuotes";
 import { TypingAnimation } from "@/components/TypingAnimation";
+import { ImageCarousel } from "@/components/ImageCarousel";
 
 const features = [
   {
@@ -32,15 +33,9 @@ export default function Home() {
     <div className="flex min-h-screen flex-col bg-green-50/50 font-sans">
       <div className="mx-auto w-full max-w-7xl">
         <header className="relative h-[500px] w-full overflow-hidden rounded-b-3xl">
-          <Image
-            src="/solar-field-image.webp"
-            alt="Solar field"
-            fill
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-green-900 via-green-800/95 via-40% to-transparent to-75%" />
-          <div className="relative z-10 flex h-full items-center px-6 md:px-12 lg:px-16">
+          <ImageCarousel />
+          <div className="absolute inset-0 z-10 bg-gradient-to-r from-green-900 via-green-800/95 via-40% to-transparent to-75%" />
+          <div className="relative z-20 flex h-full items-center px-6 md:px-12 lg:px-16">
             <div className="max-w-2xl">
               <div className="mb-8">
                 <h1 className="text-4xl font-bold text-white drop-shadow-lg sm:text-5xl lg:text-6xl">

@@ -1,0 +1,5 @@
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=officialmedigoagent@gmail.com
+SMTP_PASSWORD=tcqybufgwcoibsry
+RECIPIENT_EMAIL=starwindow170@gmail.com
