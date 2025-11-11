@@ -74,7 +74,9 @@ export function ContactForm() {
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
-        <Button variant="outline">Get a Free Quote</Button>
+        <Button variant="outline" className="h-auto py-3 px-6 text-sm font-semibold">
+          Get a Free Quote
+        </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <form onSubmit={handleSubmit}>
