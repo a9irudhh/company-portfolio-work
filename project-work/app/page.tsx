@@ -199,12 +199,13 @@ export default function Home() {
                   {processSteps.map((step, index) => (
                     <div key={step.title} className="flex flex-col items-center text-center group hover:-translate-y-2 transition-transform duration-300">
                       <div className="relative">
+                        {/* Step number badge */}
+                        <div className="absolute -top-2 -right-2 flex h-6 w-6 items-center justify-center rounded-full bg-green-600 text-white text-xs font-bold z-20 ring-2 ring-white">
+                          {index + 1}
+                        </div>
                         <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white/80 backdrop-blur-sm shadow-lg group-hover:shadow-xl transition-all duration-300 relative z-10">
                           <div className="scale-75">{step.icon}</div>
                         </div>
-                        {index < processSteps.length - 1 && (
-                          <div className="hidden lg:block absolute top-8 -right-12 w-20 h-0.5 bg-gradient-to-r from-green-300 to-emerald-200" />
-                        )}
                       </div>
                       <h3 className="mt-4 text-base font-semibold text-gray-900">{step.title}</h3>
                       <p className="mt-1 text-sm text-gray-600">{step.description}</p>
